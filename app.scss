@@ -1,0 +1,60 @@
+// Importamos los css de los componentes de google
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
+
+// Login page styles
+
+.header {
+  text-align: center;
+}
+
+.shrine-logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 80px;
+  fill: currentColor;
+}
+
+// Home page styles
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+/* Lo que hace esto es centrar tanto el nombre y contraseña al centro de la pantalla */
+.username,
+.password {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* Lo que permite esto es crear una caja flex, indicando que los componentes hijos de este se ubiquen al final de la caja
+el cual tiene como por defecto una orientacion de fila, ademas de centrarlo */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: auto;
+}
+
+.button-container button {
+  // Como los iconos de los botones no estaban centrados, los centro con flexbox
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  i{
+    display: block;
+    padding: 5px;
+  }
+}

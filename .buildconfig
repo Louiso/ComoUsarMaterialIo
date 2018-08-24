@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/ciro/.cache/gnome-builder/install/starter/host
+app-id=
+postbuild=
+prebuild=
+default=true
